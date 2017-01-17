@@ -1,0 +1,29 @@
+{
+    "name": "amphp/thread",
+    "homepage": "https://github.com/amphp/thread",
+    "description": "Non-blocking thread pool task dispatch",
+    "keywords": ["async", "concurrency", "parallelization", "non-blocking", "threads", "pthreads", "amp"],
+    "license": "MIT",
+    "authors": [
+      {
+          "name": "Daniel Lowrey",
+          "email": "rdlowrey@gmail.com",
+          "role": "Creator / Lead Developer"
+      }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "amphp/amp": "~0.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amp\\Thread\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amp\\Thread\\Test\\": "test/"
+        },
+        "files": ["test/fixtures.php"]
+    }
+}
